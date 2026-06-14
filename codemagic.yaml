@@ -1,0 +1,8 @@
+workflows:
+  android-workflow:
+    name: Android Build
+    scripts:
+      - chmod +x gradlew
+      - ./gradlew assembleDebug
+    artifacts:
+      - app/build/outputs/apk/debug/*.apk
